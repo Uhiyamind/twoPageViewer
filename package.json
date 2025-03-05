@@ -1,0 +1,64 @@
+{
+  "name": "twopageviewer",
+  "version": "1.0.0",
+  "description": "A modern two-page viewer for manga and comics",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production npm run build && electron .",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run watch\" \"electron .\"",
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --config webpack.config.js --watch",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "dist": "cross-env NODE_ENV=production electron-builder --win portable"
+  },
+  "build": {
+    "appId": "com.twopageviewer.app",
+    "productName": "TwoPage Viewer",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "win": {
+      "target": [
+        "portable"
+      ]
+    },
+    "portable": {
+      "artifactName": "TwoPageViewer.exe"
+    }
+  },
+  "keywords": [
+    "electron",
+    "viewer",
+    "manga",
+    "comics"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/preset-react": "^7.23.9",
+    "@electron-forge/cli": "^7.3.0",
+    "@electron-forge/maker-deb": "^7.3.0",
+    "@electron-forge/maker-rpm": "^7.3.0",
+    "@electron-forge/maker-squirrel": "^7.3.0",
+    "@electron-forge/maker-zip": "^7.3.0",
+    "babel-loader": "^9.1.3",
+    "concurrently": "^9.1.2",
+    "cross-env": "^7.0.3",
+    "electron": "^28.2.0",
+    "electron-builder": "^24.9.1",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.7",
+    "@mui/material": "^5.15.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
