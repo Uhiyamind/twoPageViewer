@@ -12,16 +12,26 @@
 - 📝 ファイル名表示オプション
 - ⌨️ キーボードショートカット対応
 - 💫 インストール不要のポータブル形式
+- 🖥️ Windows/Mac対応
 
 ## 使用方法
 
-### インストール不要で簡単起動
+### Windows版
 
 1. [Releases](https://github.com/Uhiyamind/twoPageViewer/releases) ページから最新の `TwoPageViewer.exe` をダウンロード
 2. ダウンロードしたファイルをお好みの場所に配置
 3. `TwoPageViewer.exe` をダブルクリックで起動
 
 ※ USBメモリなどに入れて持ち運ぶことも可能です
+
+### Mac版
+
+1. [Releases](https://github.com/Uhiyamind/twoPageViewer/releases) ページから最新の `TwoPageViewer.dmg` をダウンロード
+2. ダウンロードした `.dmg` ファイルをダブルクリック
+3. アプリケーションを「Applications」フォルダにドラッグ＆ドロップ
+4. 「Applications」フォルダから `TwoPage Viewer` を起動
+
+※ `.zip` 版も利用可能です
 
 ### 基本操作
 

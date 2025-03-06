@@ -421,7 +421,7 @@ const App = () => {
                         sx={{
                           position: 'absolute',
                           bottom: 8,
-                          left: 8,
+                          right: 8,
                           backgroundColor: 'rgba(0,0,0,0.5)',
                           padding: '4px 8px',
                           borderRadius: 1,

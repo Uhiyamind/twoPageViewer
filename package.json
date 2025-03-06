@@ -10,7 +10,9 @@
     "watch": "webpack --config webpack.config.js --watch",
     "package": "electron-forge package",
     "make": "electron-forge make",
-    "dist": "cross-env NODE_ENV=production electron-builder --win portable"
+    "dist": "cross-env NODE_ENV=production electron-builder --win portable",
+    "dist:mac": "cross-env NODE_ENV=production electron-builder --mac",
+    "dist:all": "cross-env NODE_ENV=production electron-builder -mw"
   },
   "build": {
     "appId": "com.twopageviewer.app",
@@ -23,6 +25,13 @@
       "target": [
         "portable"
       ]
+    },
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ],
+      "category": "public.app-category.entertainment"
     },
     "portable": {
       "artifactName": "TwoPageViewer.exe"
